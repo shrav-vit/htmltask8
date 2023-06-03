@@ -1,0 +1,164 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        width: 100%;
+      }
+      table,
+      tr,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      td:nth-child(1) {
+        font-weight: bold;
+        text-align: center;
+      }
+      .fill {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <table>
+        <tr>
+          <td>
+            <label>First Name</label>
+          </td>
+          <td><input type="text" name="firstname" class="fill" /></td>
+        </tr>
+        <tr>
+          <td>
+            <label>Last Name</label>
+          </td>
+          <td><input type="text" name="lastname" class="fill" /></td>
+        </tr>
+        <tr>
+          <td>
+            <label>Email</label>
+          </td>
+          <td><input type="email" name="email" class="fill" /></td>
+        </tr>
+        <tr>
+          <td>
+            <label>Password</label>
+          </td>
+          <td><input type="password" name="pwrd" class="fill" /></td>
+        </tr>
+        <tr>
+          <td>
+            <label>Re Password</label>
+          </td>
+          <td><input type="password" name="rpwrd" class="fill" /></td>
+        </tr>
+        <tr>
+          <td>
+            <label>Gender</label>
+          </td>
+          <td>
+            <input type="radio" name="gender" id="male" />
+            <label for="male">Male</label>
+            <hr />
+            <input type="radio" name="gender" id="female" />
+            <label for="female">Female</label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label> Age </label>
+          </td>
+          <td>
+            <input type="number" name="age" class="fill" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label> Phone Number </label>
+          </td>
+          <td>
+            <input type="number" name="phno" class="fill" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label> Address </label>
+          </td>
+          <td>
+            <textarea cols="80" rows="5" value="address" class="fill">
+            </textarea>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label> State </label>
+          </td>
+          <td>
+            <input type="text" name="state" class="fill" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>Country</label>
+          </td>
+          <td>
+            <select>
+              <option value="country">Choose your country</option>
+              <option value="india">India</option>
+              <option value="america">America</option>
+              <option value="england">England</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>Languages Known</label>
+          </td>
+          <td>
+            <input
+              type="checkbox"
+              id="english"
+              name="english"
+              value="english"
+            />
+            <label for="english"> English</label>
+            <input
+              type="checkbox"
+              id="kannada"
+              name="kannada"
+              value="kannada"
+            />
+            <label for="kannada"> Kannada</label>
+            <input type="checkbox" id="hindi" name="hindi" value="hindi" />
+            <label for="hindi"> Hindi</label>
+            <input type="checkbox" id="telugu" name="telugu" value="telugu" />
+            <label for="telugu"> Telugu</label>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" style="text-align: left">
+            <input type="checkbox" />
+            <span style="font-weight: normal">
+              I hereby declare all the given information to be true
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" style="text-align: right">
+            <span style="font-weight: normal">
+              Log in to <a href="#">Ethnus</a> website
+            </span>
+          </td>
+        </tr>
+      </table>
+      <br />
+      <div style="width: 100%; text-align: center">
+        <input type="submit" value="Register" />
+      </div>
+    </form>
+  </body>
+</html>
